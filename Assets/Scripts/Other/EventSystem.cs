@@ -7,23 +7,6 @@ public class EventSystem : MonoBehaviour
 {
     public static EventSystem instance;
 
-    void Start()
-    {
-        instance = this;
-        if(SceneManager.GetActiveScene().name == "StartScene")
-        {
-            if(!PlayerPrefs.HasKey("Introduction"))
-            {
-                LoadIntroLevel1();
-            }
-            else
-            {
-                LoadMenuScene();
-            }
-        }
-
-    }
-
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

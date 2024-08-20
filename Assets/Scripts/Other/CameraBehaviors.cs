@@ -10,10 +10,11 @@ public class CameraBehaviors : MonoBehaviour
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
 
-    private void Start()
-    {
-        virtualCamera.m_Lens.OrthographicSize = PlayerPrefs.GetFloat("FocusOnPlayer");
-    }
+    //private void Start()
+    //{
+    //    //virtualCamera.m_Lens.OrthographicSize = PlayerPrefs.GetFloat("FocusOnPlayer");
+    //    //virtualCamera.m_Lens.OrthographicSize = PlayerPrefs.GetFloat("FocusOnPlayer");
+    //}
 
     public void FollowChar(Transform player)
     {

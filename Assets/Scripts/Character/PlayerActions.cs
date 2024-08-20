@@ -46,24 +46,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""FowardCharacter"",
-                    ""type"": ""Button"",
-                    ""id"": ""3e7e7c12-7af1-4b25-9be0-46ee62ad3212"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""BackwardCharacter"",
-                    ""type"": ""Button"",
-                    ""id"": ""7b4ecca6-e003-48de-8361-cd632caf9a00"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""ResetLevel"",
                     ""type"": ""Button"",
                     ""id"": ""34d1806a-704d-4731-bec2-afa7148f5e5b"",
@@ -71,51 +53,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Split"",
-                    ""type"": ""Button"",
-                    ""id"": ""a6516031-13fd-47c8-a90e-5bc6f0439a1c"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Stick"",
-                    ""type"": ""Button"",
-                    ""id"": ""33776d66-16e4-4a9f-a130-80750cbfd893"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Selfkill"",
-                    ""type"": ""Button"",
-                    ""id"": ""8e576406-0076-47de-ba0a-146bee3613bc"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""MergeInAPM"",
-                    ""type"": ""Button"",
-                    ""id"": ""5ce790cb-d46e-4607-b26b-2d1a010f68da"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""MoveMobile"",
-                    ""type"": ""Value"",
-                    ""id"": ""3acc3722-022a-4452-b8f0-827947c0d000"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -155,7 +92,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""5cc7f8ea-9e67-44d9-9615-6e755c69a259"",
-                    ""path"": ""<Keyboard>/i"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -177,7 +114,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""160d92e9-d8e3-4a8f-b2eb-b7fbbdf51ae7"",
-                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -188,7 +125,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""749540dd-1c69-46e8-b59b-a34e1a1858dd"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -204,50 +141,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""GamePad"",
                     ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4f3e9c37-0225-407b-9a31-2360caa15790"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""FowardCharacter"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8cf5c70b-638e-4483-b487-c575ea13c4c6"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""GamePad"",
-                    ""action"": ""FowardCharacter"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""06ae89fc-a98d-4adb-855c-0ea7ad48f7ab"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""BackwardCharacter"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e361fa0d-81aa-49d6-967e-04f13f4decfe"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""GamePad"",
-                    ""action"": ""BackwardCharacter"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -270,83 +163,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""GamePad"",
                     ""action"": ""ResetLevel"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c7f72a17-e997-415d-8ea9-32b390c839ea"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Split"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f9145c7a-d5f8-427b-9b51-26996fc99882"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""GamePad"",
-                    ""action"": ""Split"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8867d61c-3029-4a35-adf7-f7103564372f"",
-                    ""path"": ""<Keyboard>/x"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Stick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5a8a28fa-1bdc-4e8d-aa7e-f16d3155d261"",
-                    ""path"": ""<Gamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""GamePad"",
-                    ""action"": ""Stick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e7723e31-26a9-4b3d-966e-9feb4f286cd7"",
-                    ""path"": ""<Keyboard>/minus"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Selfkill"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0e2eb4af-1839-4614-992b-9036b593493f"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MergeInAPM"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ca409041-47f8-4e20-8eb6-85fef1415ede"",
-                    ""path"": ""<Touchscreen>/primaryTouch/startPosition"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveMobile"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -382,14 +198,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         m_PlayerControls = asset.FindActionMap("PlayerControls", throwIfNotFound: true);
         m_PlayerControls_Jump = m_PlayerControls.FindAction("Jump", throwIfNotFound: true);
         m_PlayerControls_Movement = m_PlayerControls.FindAction("Movement", throwIfNotFound: true);
-        m_PlayerControls_FowardCharacter = m_PlayerControls.FindAction("FowardCharacter", throwIfNotFound: true);
-        m_PlayerControls_BackwardCharacter = m_PlayerControls.FindAction("BackwardCharacter", throwIfNotFound: true);
         m_PlayerControls_ResetLevel = m_PlayerControls.FindAction("ResetLevel", throwIfNotFound: true);
-        m_PlayerControls_Split = m_PlayerControls.FindAction("Split", throwIfNotFound: true);
-        m_PlayerControls_Stick = m_PlayerControls.FindAction("Stick", throwIfNotFound: true);
-        m_PlayerControls_Selfkill = m_PlayerControls.FindAction("Selfkill", throwIfNotFound: true);
-        m_PlayerControls_MergeInAPM = m_PlayerControls.FindAction("MergeInAPM", throwIfNotFound: true);
-        m_PlayerControls_MoveMobile = m_PlayerControls.FindAction("MoveMobile", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -453,28 +262,14 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private List<IPlayerControlsActions> m_PlayerControlsActionsCallbackInterfaces = new List<IPlayerControlsActions>();
     private readonly InputAction m_PlayerControls_Jump;
     private readonly InputAction m_PlayerControls_Movement;
-    private readonly InputAction m_PlayerControls_FowardCharacter;
-    private readonly InputAction m_PlayerControls_BackwardCharacter;
     private readonly InputAction m_PlayerControls_ResetLevel;
-    private readonly InputAction m_PlayerControls_Split;
-    private readonly InputAction m_PlayerControls_Stick;
-    private readonly InputAction m_PlayerControls_Selfkill;
-    private readonly InputAction m_PlayerControls_MergeInAPM;
-    private readonly InputAction m_PlayerControls_MoveMobile;
     public struct PlayerControlsActions
     {
         private @PlayerActions m_Wrapper;
         public PlayerControlsActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Jump => m_Wrapper.m_PlayerControls_Jump;
         public InputAction @Movement => m_Wrapper.m_PlayerControls_Movement;
-        public InputAction @FowardCharacter => m_Wrapper.m_PlayerControls_FowardCharacter;
-        public InputAction @BackwardCharacter => m_Wrapper.m_PlayerControls_BackwardCharacter;
         public InputAction @ResetLevel => m_Wrapper.m_PlayerControls_ResetLevel;
-        public InputAction @Split => m_Wrapper.m_PlayerControls_Split;
-        public InputAction @Stick => m_Wrapper.m_PlayerControls_Stick;
-        public InputAction @Selfkill => m_Wrapper.m_PlayerControls_Selfkill;
-        public InputAction @MergeInAPM => m_Wrapper.m_PlayerControls_MergeInAPM;
-        public InputAction @MoveMobile => m_Wrapper.m_PlayerControls_MoveMobile;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -490,30 +285,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
-            @FowardCharacter.started += instance.OnFowardCharacter;
-            @FowardCharacter.performed += instance.OnFowardCharacter;
-            @FowardCharacter.canceled += instance.OnFowardCharacter;
-            @BackwardCharacter.started += instance.OnBackwardCharacter;
-            @BackwardCharacter.performed += instance.OnBackwardCharacter;
-            @BackwardCharacter.canceled += instance.OnBackwardCharacter;
             @ResetLevel.started += instance.OnResetLevel;
             @ResetLevel.performed += instance.OnResetLevel;
             @ResetLevel.canceled += instance.OnResetLevel;
-            @Split.started += instance.OnSplit;
-            @Split.performed += instance.OnSplit;
-            @Split.canceled += instance.OnSplit;
-            @Stick.started += instance.OnStick;
-            @Stick.performed += instance.OnStick;
-            @Stick.canceled += instance.OnStick;
-            @Selfkill.started += instance.OnSelfkill;
-            @Selfkill.performed += instance.OnSelfkill;
-            @Selfkill.canceled += instance.OnSelfkill;
-            @MergeInAPM.started += instance.OnMergeInAPM;
-            @MergeInAPM.performed += instance.OnMergeInAPM;
-            @MergeInAPM.canceled += instance.OnMergeInAPM;
-            @MoveMobile.started += instance.OnMoveMobile;
-            @MoveMobile.performed += instance.OnMoveMobile;
-            @MoveMobile.canceled += instance.OnMoveMobile;
         }
 
         private void UnregisterCallbacks(IPlayerControlsActions instance)
@@ -524,30 +298,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
-            @FowardCharacter.started -= instance.OnFowardCharacter;
-            @FowardCharacter.performed -= instance.OnFowardCharacter;
-            @FowardCharacter.canceled -= instance.OnFowardCharacter;
-            @BackwardCharacter.started -= instance.OnBackwardCharacter;
-            @BackwardCharacter.performed -= instance.OnBackwardCharacter;
-            @BackwardCharacter.canceled -= instance.OnBackwardCharacter;
             @ResetLevel.started -= instance.OnResetLevel;
             @ResetLevel.performed -= instance.OnResetLevel;
             @ResetLevel.canceled -= instance.OnResetLevel;
-            @Split.started -= instance.OnSplit;
-            @Split.performed -= instance.OnSplit;
-            @Split.canceled -= instance.OnSplit;
-            @Stick.started -= instance.OnStick;
-            @Stick.performed -= instance.OnStick;
-            @Stick.canceled -= instance.OnStick;
-            @Selfkill.started -= instance.OnSelfkill;
-            @Selfkill.performed -= instance.OnSelfkill;
-            @Selfkill.canceled -= instance.OnSelfkill;
-            @MergeInAPM.started -= instance.OnMergeInAPM;
-            @MergeInAPM.performed -= instance.OnMergeInAPM;
-            @MergeInAPM.canceled -= instance.OnMergeInAPM;
-            @MoveMobile.started -= instance.OnMoveMobile;
-            @MoveMobile.performed -= instance.OnMoveMobile;
-            @MoveMobile.canceled -= instance.OnMoveMobile;
         }
 
         public void RemoveCallbacks(IPlayerControlsActions instance)
@@ -587,13 +340,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     {
         void OnJump(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
-        void OnFowardCharacter(InputAction.CallbackContext context);
-        void OnBackwardCharacter(InputAction.CallbackContext context);
         void OnResetLevel(InputAction.CallbackContext context);
-        void OnSplit(InputAction.CallbackContext context);
-        void OnStick(InputAction.CallbackContext context);
-        void OnSelfkill(InputAction.CallbackContext context);
-        void OnMergeInAPM(InputAction.CallbackContext context);
-        void OnMoveMobile(InputAction.CallbackContext context);
     }
 }

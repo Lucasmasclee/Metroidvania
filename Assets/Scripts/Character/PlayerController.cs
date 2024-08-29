@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 velocity;
     [SerializeField] private float moveSpeed = 100f;
     [SerializeField] private float jumpSpeed = 5f;
-    //private Vector2 inputMovement => GameManager.Instance.InputManager.Movement;
 
     private CameraBehaviors cameraBehaviors;
 

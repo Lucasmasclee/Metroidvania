@@ -44,13 +44,19 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        dealingdamage = true;
-        StartCoroutine(DamagePerTime(1f, damage));
+        if(collision.gameObject.name == "Character")
+        {
+            dealingdamage = true;
+            StartCoroutine(DamagePerTime(1f, damage));
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        dealingdamage = false;
-        StopCoroutine(DamagePerTime(1f, damage));
+        if (collision.gameObject.name == "Character")
+        {
+            dealingdamage = false;
+            StopCoroutine(DamagePerTime(1f, damage));
+        }
     }
 
     private IEnumerator DamagePerTime(float sec, float damagex)
@@ -59,6 +65,7 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("Dealing Damage");
             DamageHealthSystem.instance.DealDamage(damage);
+
             yield return new WaitForSeconds(1f);
         }
     }

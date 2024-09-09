@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using System;
 using System.Collections;
+using Unity.Burst.CompilerServices;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class PlayerController : MonoBehaviour
     private Vector2 velocity;
     [SerializeField] private float moveSpeed = 100f;
     [SerializeField] private float jumpSpeed = 5f;
+
+    [SerializeField] private LayerMask layerPlayer;
+    [SerializeField] private LayerMask layerEnemy;
+
+    private bool isDodging = false;
 
     private CameraBehaviors cameraBehaviors;
 
@@ -26,6 +32,10 @@ public class PlayerController : MonoBehaviour
         {
             inputMovement = GameManager.Instance.InputManager.Movement;
             Move();
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && !isDodging)
+        {
+            Dodge();
         }
     }
 
@@ -45,5 +55,22 @@ public class PlayerController : MonoBehaviour
         velocity.x = x;
         velocity.y = y;
         myRigidBody.velocity = velocity;
+    }
+
+    private void Dodge()
+    {
+        DamageHealthSystem.instance.isInvincible = true;
+        moveSpeed *= 1.5f;
+        Physics.IgnoreLayerCollision(layerPlayer.value, layerEnemy.value, false);
+        StartCoroutine(EndDodge(2f));
+
+    }
+
+    private IEnumerator EndDodge(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+        DamageHealthSystem.instance.isInvincible = false;
+        moveSpeed *= 2f/3f;
+        Physics.IgnoreLayerCollision(layerPlayer, layerEnemy, true);
     }
 }

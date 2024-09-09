@@ -9,6 +9,7 @@ public class DamageHealthSystem : MonoBehaviour
     [SerializeField] private float startHealth;
     [SerializeField] private float health;
     private float healthbarSize;
+    public bool isInvincible = false;
 
     [SerializeField] private GameObject healthbarBG;
 
@@ -30,7 +31,10 @@ public class DamageHealthSystem : MonoBehaviour
 
     public void DealDamage(float damage)
     {
-        health -= damage;
-        
+        if(!isInvincible)
+        {
+            health -= damage;
+        }
+
     }
 }
